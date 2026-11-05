@@ -1,0 +1,94 @@
+[gd_resource type="Resource" script_class="ScatterPalette" load_steps=11 format=3 uid="uid://cwirmkuv3s8hk"]
+
+[ext_resource type="Script" uid="uid://bv4gk1lqcqdc3" path="res://addons/vu_scatter_2d/resources/scatter_item.gd" id="1_2c4t5"]
+[ext_resource type="PackedScene" uid="uid://31cowl3o4p61" path="res://demo/forest/tree_round.tscn" id="2_dfad2"]
+[ext_resource type="PackedScene" uid="uid://cgq2imv74viyv" path="res://demo/forest/tree_pine.tscn" id="3_aod6r"]
+[ext_resource type="Texture2D" uid="uid://dey6oj4lis6wi" path="res://demo/art/forest/bush.svg" id="4_3k82d"]
+[ext_resource type="Texture2D" uid="uid://q5jfk0io6iy" path="res://demo/art/forest/rock.svg" id="5_1lc37"]
+[ext_resource type="Script" uid="uid://hy381su2axfc" path="res://addons/vu_scatter_2d/resources/scatter_palette.gd" id="6_ail4g"]
+
+[sub_resource type="Resource" id="Resource_lrj4y"]
+script = ExtResource("1_2c4t5")
+scene = ExtResource("2_dfad2")
+enabled = true
+weight = 4.0
+override_settings = false
+scale_min = 0.8
+scale_max = 1.2
+rotation_range_deg = 0.0
+flip_h_chance = 0.0
+flip_v_chance = 0.0
+tint = Color(1, 1, 1, 1)
+tint_jitter = 0.0
+z_index = 0
+anchor_at_feet = false
+
+[sub_resource type="Resource" id="Resource_q57ay"]
+script = ExtResource("1_2c4t5")
+scene = ExtResource("3_aod6r")
+enabled = true
+weight = 3.0
+override_settings = false
+scale_min = 0.8
+scale_max = 1.2
+rotation_range_deg = 0.0
+flip_h_chance = 0.0
+flip_v_chance = 0.0
+tint = Color(1, 1, 1, 1)
+tint_jitter = 0.0
+z_index = 0
+anchor_at_feet = false
+
+[sub_resource type="Resource" id="Resource_buryu"]
+script = ExtResource("1_2c4t5")
+texture = ExtResource("4_3k82d")
+enabled = true
+weight = 5.0
+override_settings = false
+scale_min = 0.8
+scale_max = 1.2
+rotation_range_deg = 0.0
+flip_h_chance = 0.0
+flip_v_chance = 0.0
+tint = Color(1, 1, 1, 1)
+tint_jitter = 0.0
+z_index = 0
+anchor_at_feet = false
+
+[sub_resource type="Resource" id="Resource_5k5c4"]
+script = ExtResource("1_2c4t5")
+texture = ExtResource("5_1lc37")
+enabled = true
+weight = 2.0
+override_settings = false
+scale_min = 0.8
+scale_max = 1.2
+rotation_range_deg = 0.0
+flip_h_chance = 0.0
+flip_v_chance = 0.0
+tint = Color(1, 1, 1, 1)
+tint_jitter = 0.0
+z_index = 0
+anchor_at_feet = false
+
+[resource]
+script = ExtResource("6_ail4g")
+items = Array[ExtResource("1_2c4t5")]([SubResource("Resource_lrj4y"), SubResource("Resource_q57ay"), SubResource("Resource_buryu"), SubResource("Resource_5k5c4")])
+radius = 160.0
+density = 0.9
+min_spacing = 56.0
+erase_strength = 1.0
+erase_only_palette = false
+random_seed = 0
+scale_min = 0.8
+scale_max = 1.25
+rotation_range_deg = 0.0
+flip_h_chance = 0.5
+flip_v_chance = 0.0
+tint = Color(1, 1, 1, 1)
+tint_jitter = 0.25
+z_index = 0
+anchor_at_feet = true
+grid_snap = false
+cell_size = Vector2(32, 32)
+use_tileset_cell_size = false

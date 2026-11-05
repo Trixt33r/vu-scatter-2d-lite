@@ -1,0 +1,3 @@
+Example props for Vu Scatter 2D (tree_round, tree_pine, bush, rock).
+Made by Vu Studio. CC0: use them in any project, commercial or not, no credit needed.
+They are only here so you can try painting before you have your own art.

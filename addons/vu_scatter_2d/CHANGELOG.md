@@ -1,0 +1,36 @@
+# Changelog
+
+## 1.0.0 – first release
+- Fence side pieces: put a fence piece drawn running up the screen (art at least 1.5x taller than wide) in the same layer as the normal fence, and Line and Rectangle use it for the up-down runs, lined up so the corners meet. The Fences and Tour demos include one (fence_side.svg).
+- Fence art with a post at one end only gets an end post where a Line or Rectangle row stops, so a fence never ends on bare rails.
+- Without a side piece, long props (art at least 1.5x wider than tall) turn along a Line or Rectangle by themselves, and are never placed upside down. Trees and other upright props stay upright.
+- Works from an empty project: "+ Add scatter layer" makes a 2D scene (level.tscn) when none is open and switches to the 2D view; example trees, bushes and rocks ship inside the plugin; the panel says what to do with no scene or a 3D scene.
+- Shape tool (Pro): Line (snaps straight, Shift for any angle), Rectangle, Circle, Spiral, Grid (rows) and Fill area (draw around an area). Live preview with a dot per prop and a count; one undo per shape.
+- Shape options: exact number of props, turn props along the shape, wobble.
+- Mirror painting (Pro): left/right, up/down or both, around a dashed line you can place in the middle of the view.
+- Only on my TileMap (Pro): props land only on tiles, or only on one tile type you pick by clicking it.
+- Clear layer and Lock props (turns painted props into normal nodes the brush leaves alone), both undoable. Live prop count for the selected layer.
+- Shortcuts: B Paint, E Erase, P Place one, Shift+B Shuffle (Pro), U Shape, Shift+U next shape, L Fill area. Shown in the tooltips.
+- Every setting has a hover tip, in the panel and in the Inspector. Clicking a prop's name brings the Inspector tab forward.
+- Image props stand on their bottom edge by default (Pro), so rows line up and Y-sort looks right.
+- "Only on my TileMap" shows a picture of the picked tile type.
+- User guide: install steps for zip and Asset Library, and a "How do I…" table.
+- Fences demo (Pro) with guide lines showing where to drag, and a Pro step in Getting started for straight rows.
+- Feature tour demo (Pro): one row per feature with an example and a "try it here" area.
+- Getting-started list in the panel that ticks off steps as you do them, a "+ Add scatter layer" button and a "Use example props" button to try it without your own art.
+- Paint turns on by itself once you've picked what to paint. The panel shows itself the first time.
+- Plain-language settings with hover tips; advanced options are folded away.
+- Drop a whole folder of props. Gap and brush size fit big art automatically on the first add.
+- "+ New layer" button while a layer is selected (the new layer draws behind it). The Lite prop limit shows in the panel.
+- The top toolbar shows thumbnails of the props you're painting and a hint for the current mode; the active mode is highlighted.
+- The Vu Scatter dock comes to the front when you select a ScatterLayer2D.
+- Godot 4.7: turns off Godot's own Scene Paint tool while you paint (they used to react to the same clicks).
+- Brush painting of scenes and textures onto a ScatterLayer2D, with radius, density and minimum spacing.
+- Erase (with strength and an "only these props" filter), Place one (one prop per click) and Shuffle (Pro).
+- Weighted palette with per-prop overrides, saved as `.tres` presets.
+- Random scale, rotation, horizontal/vertical flip, tint and tint jitter; seed for repeatable results.
+- Grid snap, optionally using the cell size of a TileMapLayer's TileSet.
+- Feet anchor and z-index for Y-sorted 2D games.
+- One undo step per stroke. Painted props are normal nodes; scene props stay linked instances.
+- Works on Godot 4.4, 4.5, 4.6 and 4.7. Uses the new dock API on 4.6+.
+- Demo scenes: Forest, Side-scroller and Town (Pro); Forest (Lite).

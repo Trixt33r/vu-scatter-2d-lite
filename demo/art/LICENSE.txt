@@ -1,0 +1,3 @@
+Demo art in this folder was made by Vu Studio for the Vu Scatter 2D demos.
+It is released under CC0 1.0 (public domain): use it for anything, no credit needed.
+https://creativecommons.org/publicdomain/zero/1.0/

@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgq2imv74viyv"]
+
+[ext_resource type="Texture2D" uid="uid://blj7dvxku72al" path="res://demo/art/forest/tree_pine.svg" id="1_krjet"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cdupb"]
+radius = 7.0
+
+[node name="TreePine" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_krjet")
+centered = false
+offset = Vector2(-40, -121)
+
+[node name="Trunk" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trunk"]
+position = Vector2(0, -3.5)
+shape = SubResource("CircleShape2D_cdupb")

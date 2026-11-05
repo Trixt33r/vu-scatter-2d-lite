@@ -1,0 +1,77 @@
+[gd_resource type="Resource" script_class="ScatterPalette" load_steps=9 format=3 uid="uid://byvdn6jjjsf84"]
+
+[ext_resource type="Script" uid="uid://bv4gk1lqcqdc3" path="res://addons/vu_scatter_2d/resources/scatter_item.gd" id="1_x5nak"]
+[ext_resource type="Texture2D" uid="uid://l2x2wj51o6m8" path="res://demo/art/forest/grass.svg" id="2_l0pls"]
+[ext_resource type="Texture2D" uid="uid://4kgpgkio1j5l" path="res://demo/art/forest/flowers.svg" id="3_d6dg0"]
+[ext_resource type="Texture2D" uid="uid://c7dtvi2e2ycn8" path="res://demo/art/forest/mushroom.svg" id="4_r3ayu"]
+[ext_resource type="Script" uid="uid://hy381su2axfc" path="res://addons/vu_scatter_2d/resources/scatter_palette.gd" id="5_qs3rd"]
+
+[sub_resource type="Resource" id="Resource_gq1bj"]
+script = ExtResource("1_x5nak")
+texture = ExtResource("2_l0pls")
+enabled = true
+weight = 10.0
+override_settings = false
+scale_min = 0.8
+scale_max = 1.2
+rotation_range_deg = 0.0
+flip_h_chance = 0.0
+flip_v_chance = 0.0
+tint = Color(1, 1, 1, 1)
+tint_jitter = 0.0
+z_index = 0
+anchor_at_feet = false
+
+[sub_resource type="Resource" id="Resource_uaabu"]
+script = ExtResource("1_x5nak")
+texture = ExtResource("3_d6dg0")
+enabled = true
+weight = 3.0
+override_settings = false
+scale_min = 0.8
+scale_max = 1.2
+rotation_range_deg = 0.0
+flip_h_chance = 0.0
+flip_v_chance = 0.0
+tint = Color(1, 1, 1, 1)
+tint_jitter = 0.0
+z_index = 0
+anchor_at_feet = false
+
+[sub_resource type="Resource" id="Resource_76myg"]
+script = ExtResource("1_x5nak")
+texture = ExtResource("4_r3ayu")
+enabled = true
+weight = 1.0
+override_settings = false
+scale_min = 0.8
+scale_max = 1.2
+rotation_range_deg = 0.0
+flip_h_chance = 0.0
+flip_v_chance = 0.0
+tint = Color(1, 1, 1, 1)
+tint_jitter = 0.0
+z_index = 0
+anchor_at_feet = false
+
+[resource]
+script = ExtResource("5_qs3rd")
+items = Array[ExtResource("1_x5nak")]([SubResource("Resource_gq1bj"), SubResource("Resource_uaabu"), SubResource("Resource_76myg")])
+radius = 160.0
+density = 5.0
+min_spacing = 18.0
+erase_strength = 1.0
+erase_only_palette = false
+random_seed = 0
+scale_min = 0.8
+scale_max = 1.4
+rotation_range_deg = 0.0
+flip_h_chance = 0.5
+flip_v_chance = 0.0
+tint = Color(1, 1, 1, 1)
+tint_jitter = 0.3
+z_index = 0
+anchor_at_feet = false
+grid_snap = false
+cell_size = Vector2(32, 32)
+use_tileset_cell_size = false
